@@ -54,18 +54,18 @@ const Profile = () => {
 <Alert variant='info' >
   
 <Link to="/skills">
-  <Button size="md" variant="outline-dark">Skills</Button>
+  <Button size="sm" variant="outline-dark">Skills</Button>
 </Link>
 
 <Link to="/contact">
-  <Button size="md" variant="outline-dark" gap={4} style={{margin:"2%"}}>contact</Button>
+  <Button size="sm" variant="outline-dark" gap={4} style={{margin:"2%"}}>contact</Button>
 </Link>
 <Link to="/expertise">
-  <Button size="md" variant="outline-dark" gap={4} style={{margin:"2%"}}>Expertise</Button>
+  <Button size="sm" variant="outline-dark" gap={4} style={{margin:"2%"}}>Expertise</Button>
 </Link>
 
 <Link to="/">
-  <Button size="md" variant="outline-dark" gap={4} style={{margin:"2%"}}>Back</Button>
+  <Button size="sm" variant="outline-dark" gap={4} style={{margin:"2%"}}>Back</Button>
 </Link>
 </Alert>
 
