@@ -1,0 +1,17 @@
+.education{
+    padding: 10%;
+   
+    }
+    
+ 
+.education-btn{
+     
+      
+    }
+   .education-btn:hover{
+        transform: scale(1.4);
+        transition: 5s;
+        background-image: linear-gradient(black,rgb(66, 74, 77));
+        color:rgb(255, 255, 255);
+      
+    }

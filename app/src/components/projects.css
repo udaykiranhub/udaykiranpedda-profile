@@ -1,0 +1,11 @@
+.projects{
+padding: 10%;
+}
+
+
+.project-btn:hover{
+    transform: scale(1.4);
+    transition: 5s;
+    background-image: linear-gradient(black,rgb(53, 56, 57));
+    color:rgb(255, 255, 255)
+}

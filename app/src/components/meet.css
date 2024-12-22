@@ -1,0 +1,11 @@
+.meet-card{
+    background-color: black;
+}
+
+.badge:hover{
+    transform: scale(1.5);
+    transition: 3s;
+    font-weight: bold;
+    font-size: 8px;
+
+}

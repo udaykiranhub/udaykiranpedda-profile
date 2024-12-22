@@ -1,0 +1,26 @@
+
+
+.profile-container{
+    box-shadow: 10px 10px 50px rgb(255, 254, 254);
+
+
+
+}
+.profile-container:hover{
+    transform:scale(1.03);
+    transition: 5s;
+
+}
+.profile-body{
+   
+width: 100%;
+padding: auto;
+
+}
+.name{
+font-weight: bold;
+background-color: black;
+color:rgb(75, 143, 130);
+ padding: 3%;
+ text-shadow:  6px 10px  15px rgb(116, 255, 125);
+  }
