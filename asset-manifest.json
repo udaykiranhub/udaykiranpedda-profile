@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/udaykiranpedda-profile/static/css/main.ef3a90d2.css",
+    "main.js": "/udaykiranpedda-profile/static/js/main.ab56c874.js",
+    "static/js/488.103417aa.chunk.js": "/udaykiranpedda-profile/static/js/488.103417aa.chunk.js",
+    "static/media/ethereumBlock.jpeg": "/udaykiranpedda-profile/static/media/ethereumBlock.280fb11deaeccdef74ad.jpeg",
+    "index.html": "/udaykiranpedda-profile/index.html",
+    "main.ef3a90d2.css.map": "/udaykiranpedda-profile/static/css/main.ef3a90d2.css.map",
+    "main.ab56c874.js.map": "/udaykiranpedda-profile/static/js/main.ab56c874.js.map",
+    "488.103417aa.chunk.js.map": "/udaykiranpedda-profile/static/js/488.103417aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef3a90d2.css",
+    "static/js/main.ab56c874.js"
+  ]
+}
