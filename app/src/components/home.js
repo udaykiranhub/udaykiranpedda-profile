@@ -12,7 +12,7 @@ import Expertise from "./expertise";
 import Projects from "./projects";
 import Education from "./education";
 import Head from "./head";
-
+import Vision from "./scopeandgoals";
 function Home() {
   return (
     <>
@@ -56,13 +56,13 @@ function Home() {
   {/* Row 1.4 */}
 
    <Row>
-    
+
     <Col md={6} sm={6} xs={6}>
     <Expertise/>
     </Col>
 
  <Col md={6} sm={6} xs={6}>
-  <Contact/>
+ <Vision/>
     </Col>
   </Row>
       

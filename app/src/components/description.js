@@ -6,9 +6,9 @@ function Description() {
   return (
     <div className="description">
       <Container>
-        <h2>Hii Welcome!!!</h2>
+        
         <Alert variant="success" className="p-4 shadow-sm rounded">
-          <h4 className="mb-3 text-center">About Me</h4>
+          {/* <h4 className="mb-3 text-center">About Me</h4> */}
           <p>
             To leverage my expertise in <strong>MERN Stack Development</strong> and 
             <strong> Ethereum Blockchain (DApps)</strong> to build scalable, secure, and 

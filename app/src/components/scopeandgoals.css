@@ -1,0 +1,32 @@
+.scope-goals {
+    padding: 10%;
+  }
+  
+  .scope-goals-btn:hover {
+    transform: scale(1.4);
+    transition: 0.5s;
+    background-image: linear-gradient(black, rgb(53, 56, 57));
+    color: rgb(255, 255, 255);
+  }
+  
+  .neon-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .alert {
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .alert-info {
+    background-color: #d1e7ff;
+    border-color: #a4c8e0;
+  }
+  
+  .alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+  
