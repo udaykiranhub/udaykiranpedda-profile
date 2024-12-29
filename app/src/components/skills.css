@@ -1,5 +1,30 @@
-#skill-card{
-    /* box-shadow: 5px 5px 10px 10px rgb(255, 255, 255); */
+.skills {
+    padding: 10%;
+  }
+  
+  .project-btn {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5% 10%;
+    margin: 2%;
+  }
+  
+  .project-btn:hover {
+    transform: scale(1.4);
+    transition: 0.5s;
+    background-image: linear-gradient(black, rgb(53, 56, 57));
+    color: rgb(255, 255, 255);
+  }
+  
+  #skill-card {
     background-color: rgb(10, 6, 6);
-    /* border: 2px solid white; */
-}
+    border-radius: 8px;
+  }
+  
+  .neon-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  

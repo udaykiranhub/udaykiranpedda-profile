@@ -1,48 +1,66 @@
-import {Alert}from "react-bootstrap";
-import  {useState} from "react"
-import {Model} from "react-bootstrap";
-function Expertise(){
+import React, { useState } from "react";
+import { Modal, Button, Alert,Badge } from "react-bootstrap";
+import "./expertise.css";
 
-    const [show, setShow] = useState(false);
+function Expertise() {
+  const [show, setShow] = useState(false);
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-    return (
+  return (
     <div className="expertise">
-    
-    
+      <header className="neon-header">
+        <Button
+          variant="outline-info"
+          className="expertise-btn"
+          style={{ padding: "5%" }}
+          onClick={handleShow}
+        >
+          Expertise
+        </Button>
+      </header>
 
-<Alert variant='secondary'>
-<strong style={{float:"left"}}>Key Skills:</strong>
-<br/>
-<span style={{float:"left"}}>✅ Web Page Optimization</span><br/>
-<span style={{float:"left"}}>✅ Web Hoisting </span><br/>
-<span style={{float:"left"}}>✅ Efficient DApp Development</span><br/>
-<span style={{float:"left"}}>✅ Application State Management (Redux)</span><br/>
-<span style={{float:"left"}}>✅ SEO Optimization</span><br/>
-<span style={{float:"left"}}>✅ Aggregation pipeline</span><br/>
+      {/* Modal for Expertise */}
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>My Expertise</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Alert variant="success">
+            <strong>Key Skills:</strong>
+            <ul>
+              <li>✅ Web Page Optimization</li>
+              <li>✅ Web Hosting</li>
+              <li>✅ Efficient DApp Development</li>
+              <li>✅ Application State Management (Redux)</li>
+              <li>✅ SEO Optimization</li>
+              <li>✅ Aggregation Pipeline</li>
+              <li>✅ Integrating Cloud services </li>
+              <li>✅ IPFS storage </li>
+              <li variant="danger">✅ Smart Contract <Badge variant="dark" pill>Auditing</Badge></li>
+            </ul>
+          </Alert>
 
-<span style={{float:"left"}}>✅ Smart Contract Auditing</span><br/>
-<span style={{float:"left"}}></span><br/>
-</Alert>
-
-
-
-    
-<Alert variant='secondary'>
-<p>
-<strong style={{float:"left"}}>Achievements:</strong>
-<br/>
-<span style={{float:"left"}}>✅ Industrial Experience</span><br/>
-<span style={{float:"left"}}>✅ Technical Lead in College Projects</span><br/>
-<span style={{float:"left"}}>✅ Worked on Real-Time Projects</span><br/>
-<span style={{float:"left"}}>✅ Hackathon Participation</span><br/>
-<span style={{float:"left"}}></span><br/>
-
-</p>
-</Alert>
-    </div>)
+          <Alert variant="success">
+            <strong>Achievements:</strong>
+            <ul>
+              <li>✅ Industrial Experience</li>
+              <li>✅ Technical Lead in College Projects</li>
+              <li>✅ Worked on Real-Time Projects</li>
+              <li>✅ Hackathon Participation</li>
+              <li> ✅ Freelancing tasks</li>
+            </ul>
+          </Alert>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="danger" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
+  );
 }
 
 export default Expertise;

@@ -19,9 +19,24 @@ function Description() {
             I am a <strong>MERN Stack and Ethereum Blockchain Developer</strong> passionate about 
             creating efficient and secure web2 and decentralized(web3) applications.
           </p>
+
+
+
           <p>
          "I am passionate about developing <strong>Web2 (MERN)</strong> and<strong> Web3</strong> solutions, including <strong>DeFi</strong> and <strong>NFT</strong> projects."
           </p>
+
+
+
+          
+   
+      <p>
+      <Alert variant='warning'>
+          I am willing to work for a salary below the current market standard
+           while contributing my best to the team and delivering high-quality results.
+           </Alert>
+          </p>
+
         </Alert>
       </Container>
     </div>

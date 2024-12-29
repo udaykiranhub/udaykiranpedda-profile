@@ -1,53 +1,94 @@
-import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import React, { useState } from "react";
+import { Modal, Button, Alert } from "react-bootstrap";
 import { Linkedin, Twitter, Instagram } from "react-bootstrap-icons";
-import "./contact.css"
+import "./contact.css";
 
 function Contact() {
-  const contactDetails = [
-    {
-      platform: "LinkedIn",
-      url: "https://www.linkedin.com/in/uday-kiran-pedda-65aa73271",
-      icon: <Linkedin size={30} />,
-      description: "Connect with me on LinkedIn to view my professional profile and network."
-    },
-    {
-      platform: "Twitter",
-      url: "https://x.com/UdayKir03362466?t=ZF7UaXqGV9zrYER1e13xpQ&s=08",
-      icon: <Twitter size={30} />,
-      description: "Follow me on Twitter for updates, thoughts, and industry insights."
-    },
-    {
-      platform: "Instagram",
-      url: "https://www.instagram.com/u_day_k_iran?igsh=b3huY3lvcXB2OXhh",
-      icon: <Instagram size={30} />,
-      description: "Check out Instagram for personal updates ."
-    }
-  ];
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
-    <Container>
-      <Row>
-        <Col xs={12}>
-          <h1 className="text-center my-4 "  style={{color:"white"}}>Contact Me</h1>
-        </Col>
-      </Row>
-      <Row>
-        {contactDetails.map((contact, index) => (
-          <Col key={index} xs={12} md={4} className="mb-4">
-            <Card className="text-center shadow-sm">
-              <Card.Body>
-                <Card.Title>{contact.icon} {contact.platform}</Card.Title>
-                <Card.Text>{contact.description}</Card.Text>
-                <a href={contact.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                  Visit {contact.platform}
-                </a>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+    <div className="contact">
+      <header className="neon-header">
+        <Button
+          variant="outline-info"
+          className="contact-btn"
+          style={{ padding: "5%" }}
+          onClick={handleShow}
+        >
+          Contact Me
+        </Button>
+      </header>
+
+      {/* Modal Component */}
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>Contact Information</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Alert variant="success">
+            <strong>LinkedIn:</strong>
+            <p>
+              Connect with me on{" "}
+              <a
+                href="https://www.linkedin.com/in/uday-kiran-pedda-65aa73271"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </p>
+          </Alert>
+          <Alert variant="success">
+            <strong>Twitter:</strong>
+            <p>
+              Follow me on{" "}
+              <a
+                href="https://x.com/UdayKir03362466?t=ZF7UaXqGV9zrYER1e13xpQ&s=08"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
+              </a>
+            </p>
+          </Alert>
+          <Alert variant="success">
+            <strong>Instagram:</strong>
+            <p>
+              Check out my profile on{" "}
+              <a
+                href="https://www.instagram.com/u_day_k_iran?igsh=b3huY3lvcXB2OXhh"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </p>
+          </Alert>
+        </Modal.Body>
+        <Modal.Footer>
+          <a
+            href="https://github.com/udaykiranhub"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-dark"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px",
+            }}
+          >
+            <i className="bi bi-github"></i> Visit My GitHub
+          </a>
+          <Button variant="danger" onClick={handleClose}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </div>
   );
 }
 

@@ -1,0 +1,16 @@
+.expertise {
+    padding: 10%;
+  }
+  
+  .expertise-btn:hover {
+    transform: scale(1.4);
+    transition: 0.5s;
+    background-image: linear-gradient(black, rgb(53, 56, 57));
+    color: rgb(255, 255, 255);
+  }
+  
+  .neon-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  

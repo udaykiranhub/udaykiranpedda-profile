@@ -12,6 +12,7 @@ import Expertise from "./expertise";
 import Projects from "./projects";
 import Education from "./education";
 import Head from "./head";
+
 function Home() {
   return (
     <>
@@ -40,14 +41,40 @@ function Home() {
         </Col>
       </Row>
 
+{/* Row 1.3 */}
+      <Row>
+    <Col md={6} sm={6} xs={6}>
+    <Skills/>
+    </Col>
+
+ 
+    <Col md={6} sm={6} xs={6}>
+  <Contact/>
+    </Col>
+  </Row>
+  
+  {/* Row 1.4 */}
+
+   <Row>
+    
+    <Col md={6} sm={6} xs={6}>
+    <Expertise/>
+    </Col>
+
+ <Col md={6} sm={6} xs={6}>
+  <Contact/>
+    </Col>
+  </Row>
+      
+
 {/* Row 2 */}
 <Row>
 <Col >
 <Routes>
-<Route path="/skills" element={<Skills/>}/>
+
 <Route path="/contact" element={<Contact/>}/>
 <Route path="/expertise" element={<Expertise/>}/>
-<Route path="/" />
+<Route path="/"  />
 </Routes>
 </Col>
 
