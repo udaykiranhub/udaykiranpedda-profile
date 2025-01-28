@@ -81,7 +81,7 @@ function Contact() {
               gap: "8px",
             }}
           >
-            <i className="bi bi-github"></i> Visit  My GitHub
+            <i className="bi bi-github"></i>Visit My GitHub
           </a>
           <Button variant="danger" onClick={handleClose}>
             close
