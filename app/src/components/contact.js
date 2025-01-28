@@ -29,9 +29,9 @@ function Contact() {
         </Modal.Header>
         <Modal.Body>
           <Alert variant="success">
-            <strong>LinkedIn:</strong>
+            <strong>LinkedIn : </strong>
             <p>
-              Connect with me on{" "}
+              Connect with me on{"  "}
               <a
                 href="https://www.linkedin.com/in/uday-kiran-pedda-65aa73271"
                 target="_blank"
@@ -81,10 +81,10 @@ function Contact() {
               gap: "8px",
             }}
           >
-            <i className="bi bi-github"></i> Visit My GitHub
+            <i className="bi bi-github"></i> Visit  My GitHub
           </a>
           <Button variant="danger" onClick={handleClose}>
-            Close
+            close
           </Button>
         </Modal.Footer>
       </Modal>
