@@ -70,7 +70,7 @@ function Contact() {
         </Modal.Body>
         <Modal.Footer>
           <a
-            href="https://github.com/udaykiranhub"
+            href="https://github.com/udaykiranhub?tab=repositories"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-dark"
