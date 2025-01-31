@@ -1,11 +1,40 @@
-.projects{
-padding: 10%;
-}
-
-
-.project-btn:hover{
-    transform: scale(1.4);
-    transition: 5s;
-    background-image: linear-gradient(black,rgb(53, 56, 57));
-    color:rgb(255, 255, 255)
-}
+/* Custom styles for the Projects component */
+.projects {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .neon-header {
+    margin-bottom: 20px;
+  }
+  
+  .project-btn {
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .project-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+  }
+  
+  .modal-header-custom {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #0d6efd;
+  }
+  
+  .project-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .project-list li {
+    margin-bottom: 10px;
+  }
+  
+  .alert {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }

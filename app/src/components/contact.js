@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Modal, Button, Alert } from "react-bootstrap";
-import { Linkedin, Twitter, Instagram } from "react-bootstrap-icons";
-import "./contact.css";
+import { Linkedin, Twitter, Instagram, Github } from "react-bootstrap-icons"; // Import icons from react-bootstrap-icons
+import "./contact.css"; // Ensure you have this CSS file for custom styles
 
 function Contact() {
   const [show, setShow] = useState(false);
@@ -15,7 +15,7 @@ function Contact() {
         <Button
           variant="outline-info"
           className="contact-btn"
-          style={{ padding: "5%" }}
+          style={{ padding: "10px 20px", fontSize: "1.2rem", fontWeight: "bold" }}
           onClick={handleShow}
         >
           Contact Me
@@ -23,49 +23,59 @@ function Contact() {
       </header>
 
       {/* Modal Component */}
-      <Modal show={show} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>Contact Information</Modal.Title>
+      <Modal show={show} onHide={handleClose} size="lg" centered>
+        <Modal.Header closeButton className="modal-header-custom">
+          <Modal.Title style={{ fontSize: "1.8rem", fontWeight: "bold", color: "#0d6efd" }}>
+            Contact Information
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Alert variant="success">
-            <strong>LinkedIn : </strong>
-            <p>
-              Connect with me on{"  "}
-              <a
-                href="https://www.linkedin.com/in/uday-kiran-pedda-65aa73271"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </a>
-            </p>
+          <Alert variant="success" className="contact-alert">
+            <div className="contact-item">
+              <Linkedin className="contact-icon" />
+              <div>
+                <strong>LinkedIn:</strong>{" "}
+                <a
+                  href="https://www.linkedin.com/in/uday-kiran-pedda-65aa73271"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Connect with me on LinkedIn
+                </a>
+              </div>
+            </div>
           </Alert>
-          <Alert variant="success">
-            <strong>Twitter:</strong>
-            <p>
-              Follow me on{" "}
-              <a
-                href="https://x.com/UdayKir03362466?t=ZF7UaXqGV9zrYER1e13xpQ&s=08"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-            </p>
+
+          <Alert variant="success" className="contact-alert">
+            <div className="contact-item">
+              <Twitter className="contact-icon" />
+              <div>
+                <strong>Twitter:</strong>{" "}
+                <a
+                  href="https://x.com/UdayKir03362466?t=ZF7UaXqGV9zrYER1e13xpQ&s=08"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Follow me on Twitter
+                </a>
+              </div>
+            </div>
           </Alert>
-          <Alert variant="success">
-            <strong>Instagram:</strong>
-            <p>
-              Check out my profile on{" "}
-              <a
-                href="https://www.instagram.com/u_day_k_iran?igsh=b3huY3lvcXB2OXhh"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Instagram
-              </a>
-            </p>
+
+          <Alert variant="success" className="contact-alert">
+            <div className="contact-item">
+              <Instagram className="contact-icon" />
+              <div>
+                <strong>Instagram:</strong>{" "}
+                <a
+                  href="https://www.instagram.com/u_day_k_iran?igsh=b3huY3lvcXB2OXhh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Check out my profile on Instagram
+                </a>
+              </div>
+            </div>
           </Alert>
         </Modal.Body>
         <Modal.Footer>
@@ -79,12 +89,14 @@ function Contact() {
               alignItems: "center",
               justifyContent: "center",
               gap: "8px",
+              fontSize: "1.1rem",
+              padding: "8px 20px",
             }}
           >
-            <i className="bi bi-github"></i>Visit My GitHub
+            <Github /> Visit My GitHub
           </a>
-          <Button variant="danger" onClick={handleClose}>
-            close
+          <Button variant="danger" onClick={handleClose} style={{ fontSize: "1.1rem", padding: "8px 20px" }}>
+            Close
           </Button>
         </Modal.Footer>
       </Modal>

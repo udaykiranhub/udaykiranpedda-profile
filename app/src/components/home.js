@@ -22,7 +22,7 @@ function Home() {
 
 {/* Row 1 */}
 <Row>
-<Head/>
+{/* <Head/> */}
 <Profile/> 
 <Meet/>
 

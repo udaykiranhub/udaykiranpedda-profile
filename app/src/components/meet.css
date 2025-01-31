@@ -1,11 +1,24 @@
-.meet-card{
-    background-color: black;
-}
-
-.badge:hover{
-    transform: scale(1.5);
-    transition: 3s;
-    font-weight: bold;
-    font-size: 8px;
-
-}
+.meet-card {
+    background-color: rgb(0, 0, 0); /* Black background */
+    border: none; /* Remove default border */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Add some padding */
+    margin: 10%; /* Margin around the card */
+  }
+  
+  .card-body {
+    display: flex; /* Use flexbox to align items side by side */
+    justify-content: center; /* Center the badges horizontally */
+    gap: 20px; /* Add space between the badges */
+  }
+  
+  .badge {
+    cursor: pointer; /* Indicate interactivity */
+    transition: transform 3s ease, font-weight 3s ease, font-size 3s ease; /* Smooth transitions */
+  }
+  
+  .badge:hover {
+    transform: scale(1.5); /* Scale up on hover */
+    font-weight: bold; /* Bold text on hover */
+    font-size: 10px; /* Smaller font size on hover */
+  }

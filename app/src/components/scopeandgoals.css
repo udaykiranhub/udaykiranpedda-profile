@@ -1,32 +1,50 @@
+/* Custom styles for the Vision component */
 .scope-goals {
-    padding: 10%;
-  }
-  
-  .scope-goals-btn:hover {
-    transform: scale(1.4);
-    transition: 0.5s;
-    background-image: linear-gradient(black, rgb(53, 56, 57));
-    color: rgb(255, 255, 255);
-  }
-  
-  .neon-header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .alert {
-    background-color: #f1f1f1;
-    border-radius: 8px;
-    padding: 20px;
-  }
-  
-  .alert-info {
-    background-color: #d1e7ff;
-    border-color: #a4c8e0;
-  }
-  
-  .alert-success {
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-  }
-  
+  text-align: center;
+  padding: 20px;
+}
+
+.neon-header {
+  margin-bottom: 20px;
+}
+
+.scope-goals-btn {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.scope-goals-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
+}
+
+.modal-header-custom {
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #0d6efd;
+}
+
+.vision-alert {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.vision-list {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.vision-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.vision-icon {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #0d6efd;
+}

@@ -2,10 +2,6 @@ import React from 'react';
 import { Container, Alert, Card } from 'react-bootstrap';
 import { Code2, Boxes, Wallet, Gem, BrainCircuit, Target, Award, AlertTriangle } from 'lucide-react';
 
-interface DescriptionProps {
-  showSalaryNote?: boolean;
-  className?: string;
-}
 
 function Description({ showSalaryNote = true, className = '' }: DescriptionProps) {
   return (

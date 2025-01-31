@@ -1,86 +1,100 @@
-
-import {Modal,Badge,Button,Card,Alert} from "react-bootstrap";
+import { Modal, Badge, Button, Card, Alert } from "react-bootstrap";
 import { useState } from "react";
-import "./projects.css"
-function Projects(){
-    const [show,setShow]=useState(false)
-    
+import "./projects.css"; // Ensure you have this CSS file for custom styles
+
+function Projects() {
+  const [show, setShow] = useState(false);
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-return(
-<div className="projects">
+  return (
+    <div className="projects">
+      <header className="neon-header">
+        <Button
+          variant="outline-info"
+          className="project-btn"
+          style={{ padding: "10px 20px", fontSize: "1.2rem", fontWeight: "bold" }}
+          onClick={handleShow}
+        >
+          Projects
+        </Button>
+      </header>
 
-<header className="neon-header">
-<Button variant="outline-info"  className="project-btn" style={{padding:"5%"}} onClick={handleShow}>
-      Projects
-</Button>
-</header>
-
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Project Knowledge!</Modal.Title>
+      <Modal show={show} onHide={handleClose} size="lg" centered>
+        <Modal.Header closeButton className="modal-header-custom">
+          <Modal.Title style={{ fontSize: "1.8rem", fontWeight: "bold", color: "#0d6efd" }}>
+            Project Knowledge!
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-<Alert variant="success">
-<strong>MERN Stack:</strong>
-<p>
-# I have  developed a <strong>Student portfilio website</strong> .
-where students can interact with their thoughts and ideas and they can build their accounts with their skills<br/>
-# I have developed website for<strong> workers management</strong> website 
-where workers can collaborate easily<br/>
+          <Alert variant="success" className="mb-4">
+            <strong style={{ fontSize: "1.4rem", color: "#0d6efd" }}>MERN Stack:</strong>
+            <ul className="project-list">
+              <li>
+                A complete <strong>School Management Application</strong> from LKG to Degree with dashboards for Main Admin, Branch Admin, and Teacher.
+              </li>
+              <li>
+                Developed a <strong>Student Portfolio Website</strong> where students can showcase their skills and interact with others.
+              </li>
+              <li>
+                Created a <strong>Workers Management Website</strong> for seamless collaboration among workers.
+              </li>
+              <li>
+                Built a <strong>Redux-based E-commerce</strong> product listing with advanced search and filter functionality.
+              </li>
+              <li>
+                Implemented <strong>SEO</strong> strategies for web pages to improve search engine rankings.
+              </li>
+            </ul>
+          </Alert>
 
-#I have developed a<strong> E-commerce Redux </strong>based Products listing with searching filter
-<br/>
-#<strong>SEO</strong> implementation for the Web pages 
-</p>
-</Alert>
-<Alert variant="success">
-<strong >Block chain:</strong>
-<p >
-#I have developed <strong>Voting application</strong> with Ethereum
-where voting can do in decentralized way<br/>
-#I have developed <strong>Defi staking protocol</strong> implementation
-Staking with tokens
-<br/>
-#I have developed smart contracts for <strong>Supply chain</strong> management for Agriculture. 
-We can track the product details in various stages<br/>
-#I have developed a block chain based <strong>verification system</strong>
-<br/>
-#I have developed a <strong>Flight Booking</strong>  smart contract for booking flights with Crypto currency.
-where users can booking their flights securely in  a Decetralized way.
+          <Alert variant="success" className="mb-4">
+            <strong style={{ fontSize: "1.4rem", color: "#0d6efd" }}>Blockchain:</strong>
+            <ul className="project-list">
+              <li>
+                Developed a <strong>Voting Application</strong> using Ethereum for decentralized voting.
+              </li>
+              <li>
+                Created a <strong>DeFi Staking Protocol</strong> for token staking.
+              </li>
+              <li>
+                Built smart contracts for <strong>Supply Chain Management</strong> in agriculture to track product details at various stages.
+              </li>
+              <li>
+                Developed a blockchain-based <strong>Verification System</strong>.
+              </li>
+              <li>
+                Designed a <strong>Flight Booking Smart Contract</strong> for secure and decentralized flight bookings using cryptocurrency.
+              </li>
+            </ul>
+          </Alert>
 
-</p>
-
-
-</Alert>
-        <a
-          href="https://github.com/udaykiranhub?tab=repositories"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn btn-dark mt-3"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: '8px',
-          }}
-        >
-          <i className="bi bi-github"></i> View projects in GitHub 
-        </a> 
-      
-            
-            
+          <a
+            href="https://github.com/udaykiranhub?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-dark mt-3"
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "8px",
+              fontSize: "1.1rem",
+              padding: "10px 20px",
+            }}
+          >
+            <i className="bi bi-github"></i> View Projects on GitHub
+          </a>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="danger" onClick={handleClose}>
+          <Button variant="danger" onClick={handleClose} style={{ fontSize: "1.1rem", padding: "8px 20px" }}>
             Close
           </Button>
-      
         </Modal.Footer>
       </Modal>
-
-    </div>)
+    </div>
+  );
 }
 
 export default Projects;

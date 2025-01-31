@@ -1,6 +1,16 @@
 import React, { useState } from "react";
 import { Container, Row, Col, ListGroup, Card, Badge, Modal, Button } from "react-bootstrap";
-import "./skills.css";
+import {
+  FaCode,
+  FaEthereum,
+  FaPython,
+  FaReact,
+  FaTools,
+  FaServer,
+  FaDatabase,
+  FaCloud,
+} from "react-icons/fa"; // Import icons from react-icons
+import "./skills.css"; // Ensure you have this CSS file for custom styles
 
 function Skills() {
   const [show, setShow] = useState(false);
@@ -11,11 +21,12 @@ function Skills() {
   const skills = [
     {
       category: "Web Development",
+      icon: <FaCode />,
       skills: [
         { name: "MERN Stack", details: "MongoDB, Express.js, React.js, Node.js" },
         { name: "Bootstrap", details: "Responsive design and UI components" },
         { name: "React.js", details: "Building dynamic user interfaces" },
-        { name: "Express js", details: "Backend Framework for server maintenance" },
+        { name: "Express.js", details: "Backend Framework for server maintenance" },
         { name: "MongoDB", details: "NoSQL database for modern applications" },
         { name: "HTML", details: "Markup language for web development" },
         { name: "CSS", details: "Styling web pages with modern techniques" },
@@ -24,6 +35,7 @@ function Skills() {
     },
     {
       category: "Blockchain",
+      icon: <FaEthereum />,
       skills: [
         { name: "Ethereum Blockchain", details: "Building decentralized applications (dApps)" },
         { name: "Solidity", details: "Developing and deploying smart contracts" },
@@ -39,6 +51,7 @@ function Skills() {
     },
     {
       category: "Programming Languages",
+      icon: <FaPython />,
       skills: [
         { name: "Python", details: "Used for DSA and problem-solving" },
         { name: "JavaScript", details: "For Web development" },
@@ -48,6 +61,7 @@ function Skills() {
     },
     {
       category: "Other",
+      icon: <FaReact />,
       skills: [
         { name: "React.js Redux", details: "State management for React applications" },
         { name: "SEO", details: "SEO Techniques to improve Crawl Ranking" },
@@ -56,6 +70,7 @@ function Skills() {
     },
     {
       category: "Tools & Technologies",
+      icon: <FaTools />,
       skills: [
         { name: "Git", details: "Version control system" },
         { name: "GitHub", details: "Hosting for version control and collaboration" },
@@ -68,6 +83,7 @@ function Skills() {
     },
     {
       category: "Services",
+      icon: <FaServer />,
       skills: [
         { name: "Render", details: "For Web Hosting" },
         { name: "Vercel", details: "For Web Hosting" },
@@ -85,30 +101,35 @@ function Skills() {
       <header className="neon-header">
         <Button
           variant="outline-info"
-          className="project-btn"
+          className="skills-btn"
+          style={{ padding: "10px 20px", fontSize: "1.2rem", fontWeight: "bold" }}
           onClick={handleShow}
         >
           Skills
         </Button>
       </header>
 
-      <Modal show={show} onHide={handleClose} size="lg">
-        <Modal.Header closeButton>
-          <Modal.Title>My Skills</Modal.Title>
+      <Modal show={show} onHide={handleClose} size="lg" centered>
+        <Modal.Header closeButton className="modal-header-custom">
+          <Modal.Title style={{ fontSize: "1.8rem", fontWeight: "bold", color: "#0d6efd" }}>
+            <FaCode style={{ marginRight: "10px" }} /> My Skills
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Container>
             {skills.map((skillCategory, index) => (
               <Row key={index} className="mb-4">
                 <Col xs={12}>
-                  <Card className="shadow-sm" id="skill-card">
+                  <Card className="shadow-sm skill-card">
                     <Card.Body>
-                      <Card.Title className="text-primary">{skillCategory.category}</Card.Title>
+                      <Card.Title className="text-primary">
+                        {skillCategory.icon} {skillCategory.category}
+                      </Card.Title>
                       <ListGroup variant="flush">
                         {skillCategory.skills.map((skill, idx) => (
                           <ListGroup.Item
                             key={idx}
-                            className="d-flex justify-content-between align-items-start"
+                            className="d-flex justify-content-between align-items-start skill-item"
                           >
                             <div>
                               <h5>{skill.name}</h5>
@@ -128,7 +149,7 @@ function Skills() {
           </Container>
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="danger" onClick={handleClose}>
+          <Button variant="danger" onClick={handleClose} style={{ fontSize: "1.1rem", padding: "8px 20px" }}>
             Close
           </Button>
         </Modal.Footer>
