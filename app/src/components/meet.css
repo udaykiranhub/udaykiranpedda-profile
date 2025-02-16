@@ -3,7 +3,7 @@
     border: none; /* Remove default border */
     border-radius: 15px; /* Rounded corners */
     padding: 20px; /* Add some padding */
-    margin: 10%; /* Margin around the card */
+    margin: 5%; /* Margin around the card */
   }
   
   .card-body {
@@ -12,13 +12,68 @@
     gap: 20px; /* Add space between the badges */
   }
   
-  .badge {
-    cursor: pointer; /* Indicate interactivity */
-    transition: transform 3s ease, font-weight 3s ease, font-size 3s ease; /* Smooth transitions */
+  /* .badge {
+    cursor: pointer; 
+    transition: transform 3s ease, font-weight 3s ease, font-size 3s ease;
   }
   
   .badge:hover {
-    transform: scale(1.5); /* Scale up on hover */
-    font-weight: bold; /* Bold text on hover */
-    font-size: 10px; /* Smaller font size on hover */
+    transform: scale(1.5);
+    font-weight: bold; 
+    font-size: 10px; 
+  } */
+
+
+  .badge {
+    display: inline-block;
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+    background-color: #00b3ff; /* Neon blue background */
+    border-radius: 0.25em;
+    text-shadow:
+      0 0 5px #00b3ff,
+      0 0 10px #00b3ff,
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff,
+      0 0 80px #00b3ff;
+    box-shadow:
+      0 0 5px #00b3ff,
+      0 0 10px #00b3ff,
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff,
+      0 0 80px #00b3ff;
+    animation: neon-glow 1.5s infinite alternate;
+  }
+  
+  @keyframes neon-glow {
+    from {
+      text-shadow:
+        0 0 5px #00b3ff,
+        0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff;
+      box-shadow:
+        0 0 5px #00b3ff,
+        0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff;
+    }
+    to {
+      text-shadow:
+        0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff;
+      box-shadow:
+        0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff;
+    }
   }

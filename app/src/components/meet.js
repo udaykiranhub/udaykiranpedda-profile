@@ -6,13 +6,13 @@ function Meet() {
   return (
     <div className="meet">
       <Card className="meet-card">
-        <Card.Body className="card-body">
+        <Card.Body className="card-body ">
           {/* Phone Badge with Icon */}
           <OverlayTrigger
             placement="top"
             overlay={<Tooltip id="tooltip-phone">Let's discuss over a call!</Tooltip>}
           >
-            <Badge bg="light" text="dark" pill className="d-flex align-items-center gap-2 p-2">
+            <Badge bg="light" text="dark" pill className="d-flex align-items-center gap-2 p-2 ">
               <Telephone size={18} /> {/* Phone icon */}
               <span>+91 6305355185</span>
             </Badge>

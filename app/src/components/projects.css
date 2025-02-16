@@ -1,40 +1,29 @@
-/* Custom styles for the Projects component */
-.projects {
-    text-align: center;
-    padding: 20px;
+.neon-text {
+  color: #fff; /* White text */
+  text-shadow:
+    0 0 5px #00b3ff,
+    0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff,
+    0 0 100px #d77868;
+  animation: neon-glow 1s infinite alternate;
+}
+
+@keyframes neon-glow {
+  from {
+    text-shadow:
+      0 0 5px #00b3ff,
+      0 0 10px #00b3ff,
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff,
+      0 0 80px #00b3ff;
   }
-  
-  .neon-header {
-    margin-bottom: 20px;
+  to {
+    text-shadow:
+      0 0 10px #00b3ff,
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff,
+      0 0 80px #00b3ff,
+      0 0 120px #00b3ff;
   }
-  
-  .project-btn {
-    border-radius: 20px;
-    transition: all 0.3s ease;
-  }
-  
-  .project-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
-  }
-  
-  .modal-header-custom {
-    background-color: #f8f9fa;
-    border-bottom: 2px solid #0d6efd;
-  }
-  
-  .project-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-  
-  .project-list li {
-    margin-bottom: 10px;
-  }
-  
-  .alert {
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}

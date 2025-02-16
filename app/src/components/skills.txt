@@ -25,7 +25,6 @@ function Skills() {
       skills: [
         { name: "MERN Stack", details: "MongoDB, Express.js, React.js, Node.js" },
         { name: "Bootstrap", details: "Responsive design and UI components" },
-        { name: "Material UI", details: "Responsive design and UI components" },
         { name: "React.js", details: "Building dynamic user interfaces" },
         { name: "Express.js", details: "Backend Framework for server maintenance" },
         { name: "MongoDB", details: "NoSQL database for modern applications" },

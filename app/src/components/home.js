@@ -13,6 +13,9 @@ import Projects from "./projects";
 import Education from "./education";
 import Head from "./head";
 import Vision from "./scopeandgoals";
+
+import SkillChecker from "./skillChecker"
+
 function Home() {
   return (
     <>
@@ -23,12 +26,15 @@ function Home() {
 {/* Row 1 */}
 <Row>
 {/* <Head/> */}
+
 <Profile/> 
 <Meet/>
-
+<SkillChecker/>
 </Row>
 
-{/* Row 1.2 */}
+
+
+{/* Row2 */}
 <Row>
     
         <Col md={6} sm={6} xs={6}>
@@ -67,19 +73,19 @@ function Home() {
   </Row>
       
 
+
+
 {/* Row 2 */}
 <Row>
 <Col >
 <Routes>
-
 <Route path="/contact" element={<Contact/>}/>
 <Route path="/expertise" element={<Expertise/>}/>
 <Route path="/"  />
 </Routes>
 </Col>
-
-
 </Row>
+
  {/* Row 3 */}
  <Row>
 <Col>

@@ -18,7 +18,7 @@ function Vision() {
           style={{ padding: "10px 20px", fontSize: "1.2rem", fontWeight: "bold" }}
           onClick={handleShow}
         >
-          Scope & Goals
+          Scope
         </Button>
       </header>
 

@@ -18,7 +18,7 @@ function Contact() {
           style={{ padding: "10px 20px", fontSize: "1.2rem", fontWeight: "bold" }}
           onClick={handleShow}
         >
-          Contact Me
+          Contact 
         </Button>
       </header>
 

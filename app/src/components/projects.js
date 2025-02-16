@@ -46,17 +46,21 @@ function Projects() {
               <li>
                 Implemented <strong>SEO</strong> strategies for web pages to improve search engine rankings.
               </li>
+              <li>
+              Worked as a Freelancer
+              </li>
             </ul>
           </Alert>
 
           <Alert variant="success" className="mb-4">
             <strong style={{ fontSize: "1.4rem", color: "#0d6efd" }}>Blockchain:</strong>
             <ul className="project-list">
+         
               <li>
                 Developed a <strong>Voting Application</strong> using Ethereum for decentralized voting.
               </li>
               <li>
-                Created a <strong>DeFi Staking Protocol</strong> for token staking.
+                Created a <strong>DeFi For Staking</strong> .
               </li>
               <li>
                 Built smart contracts for <strong>Supply Chain Management</strong> in agriculture to track product details at various stages.
@@ -66,6 +70,12 @@ function Projects() {
               </li>
               <li>
                 Designed a <strong>Flight Booking Smart Contract</strong> for secure and decentralized flight bookings using cryptocurrency.
+              </li>
+              <li>
+                Auditing  <strong>Smart contract</strong> .
+              </li>
+              <li>
+              Worked as a Freelancer
               </li>
             </ul>
           </Alert>
