@@ -1,7 +1,7 @@
 import { Modal, Button, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { FaGraduationCap, FaSchool, FaBook, FaUniversity } from "react-icons/fa"; // Import icons from react-icons
-import "./education.css"; // Ensure you have this CSS file for custom styles
+import "./education.css"; 
 
 function Education() {
   const [show, setShow] = useState(false);
@@ -19,14 +19,14 @@ function Education() {
           onClick={handleShow}
         >
         Education
-        {/* <FaGraduationCap style={{ marginRight: "8px" }} /> */}
+ 
         </Button>
       </header>
 
       <Modal show={show} onHide={handleClose} size="lg" centered>
         <Modal.Header closeButton className="modal-header-custom">
           <Modal.Title style={{ fontSize: "1.8rem", fontWeight: "bold", color: "#0d6efd" }}>
-            <FaUniversity style={{ marginRight: "10px" }} /> Educational Details
+            <FaUniversity style={{ marginRight: "10px" }} />Educational  Details
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -34,7 +34,7 @@ function Education() {
             <div className="education-item">
               <FaSchool className="education-icon" />
               <div>
-                <strong>Institute:</strong> Lendi Institute of Engineering and Technology
+                <strong>Institute:</strong>Lendi Institute of Engineering and Technology
               </div>
             </div>
             <div className="education-item">

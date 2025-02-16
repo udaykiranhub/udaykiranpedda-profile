@@ -25,6 +25,7 @@ function Description({ showSalaryNote = true, className = '' }) {
                   <strong className="text-primary"> Ethereum Blockchain (DApps)</strong> to build scalable, secure, and
                   innovative applications. My aim is to contribute to impactful projects,
                   continuously grow my technical skills, and stay updated with emerging technologies.
+                
                 </p>
               </div>
             </Alert>
@@ -38,7 +39,7 @@ function Description({ showSalaryNote = true, className = '' }) {
               <Boxes className="flex-shrink-0 text-success" size={24} aria-label="Boxes Icon" />
               <p className="mb-0">
                 I am a <strong className="text-success">MERN Stack and Ethereum Blockchain Developer</strong> passionate about
-                creating efficient and secure web2 and decentralized(web3) applications.
+                creating efficient and secure web2 and decentralized Applications  (web3d).
               </p>
             </div>
           </Card.Body>
